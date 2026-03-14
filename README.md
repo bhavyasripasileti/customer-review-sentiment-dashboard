@@ -154,7 +154,7 @@ Neutral 😐
 Clone the repository:
 
 ```
-git clone https://github.com/YOUR_USERNAME/customer-review-sentiment-dashboard.git
+git clone https://github.com/bhavyasripasileti/customer-review-sentiment-dashboard.git
 ```
 
 Navigate to the project directory:
