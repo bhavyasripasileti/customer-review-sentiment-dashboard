@@ -6,7 +6,6 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
 # PAGE CONFIG
-
 st.set_page_config(
     page_title="Customer Review Sentiment Dashboard",
     page_icon="📊",
@@ -14,22 +13,22 @@ st.set_page_config(
 )
 
 # LOAD DATA
-
 @st.cache_data
 def load_data():
     df = pd.read_csv("dataset/reviews_sample.csv")
+
+    # keep only required columns
     df = df[['Text', 'Score']]
+
     return df
 
 df = load_data()
 
 # LOAD MODEL
-
 model = pickle.load(open("model/sentiment_model.pkl","rb"))
 tfidf = pickle.load(open("model/tfidf_vectorizer.pkl","rb"))
 
 # SENTIMENT FUNCTION
-
 def predict_sentiment(review):
 
     vector = tfidf.transform([review])
@@ -38,7 +37,6 @@ def predict_sentiment(review):
     return prediction[0]
 
 # SIDEBAR
-
 menu = st.sidebar.selectbox(
     "Navigation",
     [
@@ -50,7 +48,6 @@ menu = st.sidebar.selectbox(
 )
 
 # HOME PAGE
-
 if menu == "Home":
 
     st.title("📊 Customer Review Sentiment Analysis Dashboard")
@@ -79,7 +76,6 @@ if menu == "Home":
     col4.metric("Negative Reviews", negative)
 
 # SENTIMENT PREDICTOR
-
 elif menu == "Sentiment Predictor":
 
     st.title("🧠 Review Sentiment Predictor")
@@ -112,7 +108,6 @@ elif menu == "Sentiment Predictor":
     """)
 
 # DATASET INSIGHTS
-
 elif menu == "Dataset Insights":
 
     st.title("📈 Dataset Insights")
@@ -135,7 +130,6 @@ elif menu == "Dataset Insights":
     st.plotly_chart(fig, use_container_width=True)
 
 # WORD CLOUD
-
 elif menu == "WordCloud":
 
     st.title("☁️ Word Cloud")
@@ -149,8 +143,12 @@ elif menu == "WordCloud":
         ["Positive","Negative"]
     )
 
-    # Use sample for faster word cloud generation
-    sample_reviews = df[df['Sentiment']==sentiment_option]['Text'].sample(3000, random_state=42)
+    filtered = df[df['Sentiment'] == sentiment_option]
+
+    # prevent crash if dataset is small
+    sample_size = min(2000, len(filtered))
+
+    sample_reviews = filtered['Text'].sample(sample_size, random_state=42)
 
     text = " ".join(sample_reviews)
 
@@ -168,6 +166,5 @@ elif menu == "WordCloud":
     st.pyplot(fig)
 
 # FOOTER
-
 st.sidebar.write("---")
 st.sidebar.write("Built with ❤️ using Streamlit")
