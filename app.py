@@ -18,10 +18,7 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     df = pd.read_csv("dataset/reviews_sample.csv")
-
-    # Use smaller sample for faster app performance
-    df = df[['Text','Score']].sample(50000, random_state=42)
-
+    df = df[['Text', 'Score']]
     return df
 
 df = load_data()
