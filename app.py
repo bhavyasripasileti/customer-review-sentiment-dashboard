@@ -183,3 +183,5 @@ st.sidebar.write("Bhavya Sri Pasileti")
 st.sidebar.write("---")
 
 st.sidebar.caption("Built with ❤️ using Streamlit")
+
+st.sidebar.write("---")
