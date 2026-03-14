@@ -185,7 +185,7 @@ st.sidebar.write("---")
 
 st.sidebar.markdown(
 """
-<div style='text-align:center; font-size:15px; color:white; font-weight:500;'>
+<div style='font-size:15px; color:white; font-weight:500;'>
 ❤️ Built with <b>Streamlit</b>
 </div>
 """,
