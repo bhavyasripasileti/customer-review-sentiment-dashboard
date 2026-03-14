@@ -47,10 +47,6 @@ menu = st.sidebar.selectbox(
 )
 
 # HOME PAGE
-st.sidebar.image(
-"https://cdn-icons-png.flaticon.com/512/4149/4149675.png",
-width=70
-)
 
 if menu == "Home":
 
@@ -187,6 +183,11 @@ st.sidebar.write("Bhavya Sri Pasileti")
 
 st.sidebar.write("---")
 
-st.sidebar.caption("Built with ❤️ using Streamlit")
-
-st.sidebar.write("---")
+st.sidebar.markdown(
+"""
+<div style='text-align:center; font-size:15px; color:white; font-weight:500;'>
+❤️ Built with <b>Streamlit</b>
+</div>
+""",
+unsafe_allow_html=True
+)
