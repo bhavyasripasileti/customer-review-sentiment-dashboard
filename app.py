@@ -16,8 +16,7 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     df = pd.read_csv("dataset/reviews_sample.csv")
-
-    # keep only required columns
+    
     df = df[['Text', 'Score']]
 
     return df
