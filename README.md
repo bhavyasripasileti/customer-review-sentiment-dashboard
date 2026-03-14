@@ -8,8 +8,6 @@ Built using **Machine Learning and Streamlit**, this project demonstrates how bu
 
 ## 🚀 Streamlit Application
 
-click here:
-
 ```
 https://customer-review-sentiment-dashboard-3nympkkvxgvinsvx2ghisb.streamlit.app
 ```
@@ -109,7 +107,7 @@ Customer-Sentiment-Dashboard
 ---
 
 ## 🧪 Example Predictions
----
+
 Example Input:
 
 ```
@@ -134,7 +132,7 @@ Predicted Output:
 ```
 Negative 😡
 ```
-
+---
 Example Input:
 
 ```
@@ -146,6 +144,8 @@ Predicted Output:
 ```
 Neutral 😐
 ```
+
+---
 
 ---
 
