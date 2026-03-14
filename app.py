@@ -166,4 +166,26 @@ elif menu == "WordCloud":
 
 # FOOTER
 st.sidebar.write("---")
-st.sidebar.write("Built with ❤️ using Streamlit")
+
+st.sidebar.markdown("### 🚀 About This App")
+st.sidebar.write(
+"""
+This dashboard uses **Machine Learning + NLP** to analyze 
+customer product reviews and predict their sentiment.
+"""
+)
+
+st.sidebar.write("---")
+
+st.sidebar.markdown("### 🧠 Model")
+st.sidebar.write("Algorithm: Logistic Regression")
+st.sidebar.write("Vectorizer: TF-IDF")
+
+st.sidebar.write("---")
+
+st.sidebar.markdown("### 👨‍💻 Author")
+st.sidebar.write("Bhavya Sri Pasileti")
+
+st.sidebar.write("---")
+
+st.sidebar.caption("Built with ❤️ using Streamlit")
