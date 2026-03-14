@@ -47,6 +47,11 @@ menu = st.sidebar.selectbox(
 )
 
 # HOME PAGE
+st.sidebar.image(
+"https://cdn-icons-png.flaticon.com/512/4149/4149675.png",
+width=70
+)
+
 if menu == "Home":
 
     st.title("📊 Customer Review Sentiment Analysis Dashboard")
@@ -170,8 +175,8 @@ st.sidebar.write("---")
 st.sidebar.markdown("### 🚀 About This App")
 st.sidebar.write(
 """
-This dashboard uses **Machine Learning + NLP** to analyze 
-customer product reviews and predict their sentiment.
+**AI-powered dashboard** that analyzes customer product reviews  
+using **Machine Learning + NLP**.
 """
 )
 
