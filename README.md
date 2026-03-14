@@ -6,20 +6,13 @@ Built using **Machine Learning and Streamlit**, this project demonstrates how bu
 
 ---
 
-## 🚀 Application Demo
+## 🚀 Streamlit Application
 
-Run the Streamlit dashboard locally:
-
-```
-streamlit run app.py
-```
-
-Once executed, the application will open in your browser at:
+click here:
 
 ```
-http://localhost:8501
+https://customer-review-sentiment-dashboard-3nympkkvxgvinsvx2ghisb.streamlit.app
 ```
-
 ---
 
 ## 🧠 Project Overview
@@ -62,7 +55,7 @@ The application provides an **interactive analytics dashboard** where users can:
 - NumPy
 
 ### Natural Language Processing
-- NLTK
+- NLTK (stopwords, word_tokenize, punkt)
 
 ### Machine Learning
 - Scikit-learn
@@ -96,39 +89,9 @@ Customer-Sentiment-Dashboard
 │   └── sentiment_analysis.ipynb
 │
 ├── dataset
-│
-└── images
-    ├── home.png
-    ├── predictor.png
-    ├── insights.png
-    └── wordcloud.png
+|   └── reviews_sample.csv
+
 ```
-
----
-
-## 📊 Application Screenshots
-
-### Dashboard Overview
-
-![Dashboard](images/home.png)
-
----
-
-### Sentiment Prediction
-
-![Sentiment Predictor](images/predictor.png)
-
----
-
-### Dataset Insights
-
-![Dataset Insights](images/insights.png)
-
----
-
-### Word Cloud Visualization
-
-![Word Cloud](images/wordcloud.png)
 
 ---
 
@@ -146,7 +109,7 @@ Customer-Sentiment-Dashboard
 ---
 
 ## 🧪 Example Predictions
-
+---
 Example Input:
 
 ```
@@ -158,6 +121,7 @@ Predicted Output:
 ```
 Positive 😊
 ```
+---
 
 Example Input:
 
