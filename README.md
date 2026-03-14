@@ -19,9 +19,9 @@ Customer reviews contain valuable insights about products and services. However,
 
 This project solves that problem by building an **AI-powered sentiment analysis system** that automatically classifies reviews into:
 
-• Positive  
-• Neutral  
-• Negative  
+• 😊 Positive  
+• 😐 Neutral  
+• 😡 Negative  
 
 The application provides an **interactive analytics dashboard** where users can:
 
