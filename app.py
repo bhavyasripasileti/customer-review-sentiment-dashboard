@@ -177,12 +177,6 @@ customer product reviews and predict their sentiment.
 
 st.sidebar.write("---")
 
-st.sidebar.markdown("### 🧠 Model")
-st.sidebar.write("Algorithm: Logistic Regression")
-st.sidebar.write("Vectorizer: TF-IDF")
-
-st.sidebar.write("---")
-
 st.sidebar.markdown("### 👨‍💻 Author")
 st.sidebar.write("Bhavya Sri Pasileti")
 
