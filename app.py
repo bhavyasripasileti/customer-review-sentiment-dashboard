@@ -168,7 +168,7 @@ elif menu == "WordCloud":
 # FOOTER
 st.sidebar.write("---")
 
-st.sidebar.markdown("### 🚀 About This App")
+st.sidebar.markdown("### About This App")
 st.sidebar.write(
 """
 **AI-powered dashboard** that analyzes customer product reviews using **Machine Learning + NLP**.
